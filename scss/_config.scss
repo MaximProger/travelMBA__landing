@@ -21,8 +21,10 @@ $mobile-sm: 375px;
 
 @include font("Montserrat", normal, 300, "../fonts/Montserrat-Light.ttf");
 @include font("Montserrat", normal, 400, "../fonts/Montserrat-Regular.ttf");
+@include font("Montserrat", normal, 500, "../fonts/Montserrat-Medium.ttf");
 @include font("Montserrat", normal, 700, "../fonts/Montserrat-Bold.ttf");
-@include font("Montserrat", normal, 900, "../fonts/Montserrat-ExtraBold.ttf");
+@include font("Montserrat", normal, 800, "../fonts/Montserrat-ExtraBold.ttf");
+@include font("Montserrat", normal, 800, "../fonts/Montserrat-Black.ttf");
 
 // GENERAL DOCUMENT STYLES
 

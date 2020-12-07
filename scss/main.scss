@@ -25,65 +25,39 @@ section {
 }
 
 .text {
-  font-size: 16px;
-  line-height: 20px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
   color: #333333;
-  margin-bottom: 8px;
+  margin-top: 1rem;
+}
+
+.text__medium {
+  font-weight: 500;
 }
 
 .btn {
   font-family: "Montserrat";
-  padding: 16px 24px;
+  max-width: 420px;
+  padding: 1rem 2rem;
   background: linear-gradient(142.44deg, #2bbda5 14.29%, #93dc31 86.35%);
   font-weight: bold;
-  font-size: 24px;
   text-transform: uppercase;
   color: #ffffff;
   border: none;
   outline: none;
   cursor: pointer;
-  transition: all 0.2s linear;
+  transition: all 0.3s ease;
   position: relative;
+  // padding: 1rem 0.5rem;
+  display: block;
+  text-align: center;
+  font-size: 1.125rem;
 
   &:focus {
     outline: none;
     box-shadow: none;
   }
-
-  // &:hover {
-  //   &:before {
-  //     opacity: 1;
-  //   }
-
-  //   .btn__text {
-  //     background: linear-gradient(142.44deg, #2bbda5 14.29%, #93dc31 86.35%);
-  //     -webkit-background-clip: text;
-  //     -webkit-text-fill-color: transparent;
-  //   }
-  // }
-
-  // &:before {
-  //   opacity: 0;
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background: #fff;
-  //   z-index: 1;
-  //   transition: all 0.2s linear;
-  //   // border: 1px solid transparent;
-  //   // border-image: linear-gradient(142.44deg, #2bbda5 14.29%, #93dc31 86.35%);
-  //   // border-image-slice: 1;
-  // }
-
-  // &.header__btn,
-  // &.intro__btn {
-  //   &:before {
-  //     background: #eaf8f6;
-  //   }
-  // }
 }
 
 .btn__text {
@@ -100,10 +74,10 @@ section {
 }
 
 .title {
-  font-weight: bold;
-  font-size: 40px;
+  font-weight: 800;
+  font-size: 1.888rem;
   line-height: 136%;
-  margin-bottom: 8px;
+  margin-bottom: 1rem;
 }
 
 .gradient__text {
@@ -120,6 +94,10 @@ section {
 
 .extrabold {
   font-weight: 900;
+}
+
+.logo__header {
+  max-width: 250px;
 }
 
 // Header
@@ -259,11 +237,11 @@ section {
 
 .intro__title {
   font-family: Montserrat;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 40px;
   line-height: 136%;
   color: #333333;
-  margin-bottom: 8px;
+  margin-bottom: 1rem;
 }
 
 .intro__subtitle {
@@ -294,12 +272,6 @@ section {
   justify-content: space-between;
 }
 
-.banners__title {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 1;
-}
-
 .banners__item {
   mix-blend-mode: luminosity;
   filter: grayscale(100%);
@@ -307,11 +279,6 @@ section {
 
 // What
 .what {
-}
-
-.what__title {
-  font-weight: bold;
-  margin-bottom: 8px;
 }
 
 .what__wrapper {
@@ -329,11 +296,6 @@ section {
   .text {
     margin-bottom: 16px;
   }
-}
-
-.whom__title {
-  font-weight: bold;
-  margin-bottom: 8px;
 }
 
 .list__title {
@@ -397,11 +359,6 @@ section {
   }
 }
 
-.feature__title {
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
 // Works
 .works {
   .text {
@@ -411,10 +368,14 @@ section {
   }
 }
 
+.works__list {
+  margin-top: 1rem;
+}
+
 .works__item {
   width: fit-content;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 136%;
   margin-bottom: 7px;
   padding-left: 1px;
@@ -430,10 +391,6 @@ section {
 }
 
 // Access
-
-.access__title {
-  margin-bottom: 24px;
-}
 
 .access__wrapper {
   display: flex;
@@ -451,6 +408,8 @@ section {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  transition: all 0.2s linear;
+  cursor: pointer;
   background: linear-gradient(
       287.43deg,
       rgba(255, 255, 255, 0.63) 0%,
@@ -458,6 +417,18 @@ section {
     ),
     #c8f5e1;
   margin-bottom: 30px;
+  position: relative;
+
+  &:hover {
+    background-image: linear-gradient(
+        180deg,
+        rgba(67, 83, 255, 0.05),
+        rgba(67, 83, 255, 0.05)
+      ),
+      linear-gradient(45deg, #dceaff, #f3f2fb);
+    background-position: 0 0, 0 0;
+    background-size: auto, auto;
+  }
 
   &--pink {
     background: linear-gradient(
@@ -466,6 +437,17 @@ section {
         rgba(255, 255, 255, 0) 52.62%
       ),
       #feeeee;
+
+    &:hover {
+      background-image: linear-gradient(
+          180deg,
+          rgba(67, 83, 255, 0.05),
+          rgba(67, 83, 255, 0.05)
+        ),
+        linear-gradient(45deg, #f1effd, #ffeaef);
+      background-position: 0 0, 0 0;
+      background-size: auto, auto;
+    }
   }
 
   &--gray {
@@ -475,7 +457,22 @@ section {
         rgba(255, 255, 255, 0) 52.62%
       ),
       #e6e7fd;
+
+    &:hover {
+      background-image: linear-gradient(
+          180deg,
+          rgba(67, 83, 255, 0.05),
+          rgba(67, 83, 255, 0.05)
+        ),
+        linear-gradient(45deg, #e1eaff, #fbf0f4);
+      background-position: 0 0, 0 0;
+      background-size: auto, auto;
+    }
   }
+}
+
+.access__top {
+  z-index: 3;
 }
 
 .access__name {
@@ -488,6 +485,7 @@ section {
 .access_description {
   font-weight: 600;
   font-size: 16px;
+  z-index: 3;
 }
 
 // Cost
@@ -519,7 +517,7 @@ section {
 
 // Company
 .company {
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   background: #0b0b0b;
 
   .text {
@@ -543,7 +541,7 @@ section {
 
 .company__item__wrapper {
   width: 25%;
-  margin-bottom: 29px;
+  margin-bottom: 113px;
   text-align: center;
 
   // &:nth-child(1),
@@ -607,6 +605,7 @@ section {
   background-color: #0b0b0b;
   padding-top: 50px;
   padding-bottom: 64px;
+  font-size: 14px;
 }
 
 .footer__line {
@@ -632,10 +631,6 @@ section {
     display: flex;
     justify-content: center;
   }
-
-  // &--center {
-  //   max-width: 191px;
-  // }
 }
 
 .logo__footer {
@@ -684,12 +679,12 @@ section {
 }
 
 .footer__nav__link {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 136%;
   text-align: right;
   color: #ffffff;
   text-decoration: none;
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
   transition: all 0.2s linear;
 
   &:last-child {
@@ -702,7 +697,7 @@ section {
 }
 
 .footer__address__item {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 136%;
   color: #ffffff;
   margin-bottom: 7px;
@@ -713,9 +708,9 @@ section {
 }
 
 .footer__info__text {
-  text-align: center;
+  // text-align: center;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 136%;
   color: #ffffff;
   margin-bottom: 7px;
@@ -803,7 +798,7 @@ section {
 
   .btn {
     font-size: 1.125rem;
-    padding: 12px 20px;
+    // padding: 12px 20px;
   }
 
   .text {
@@ -816,11 +811,6 @@ section {
     font-weight: 800;
   }
 
-  .logo__header {
-    max-width: 60%;
-    width: 100%;
-  }
-
   .intro {
     padding-top: 120px;
   }
@@ -830,11 +820,11 @@ section {
   }
 
   .intro__subtitle {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .intro__description {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .intro__btn {
@@ -843,7 +833,7 @@ section {
 
   .banners__inner {
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 100px;
   }
 
@@ -853,11 +843,8 @@ section {
   }
 
   .banners__item {
-    // margin: 15px 9px;
-    // margin-bottom: 15px;
-    // max-width: 100px;
-    max-width: 33%;
-    // width: 100px;
+    max-width: 32%;
+    margin: 0 10px;
   }
 
   .what__title {
@@ -894,6 +881,7 @@ section {
     width: 50%;
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 50px;
   }
 
   .company__item {
@@ -920,5 +908,68 @@ section {
 
   .footer__info__text {
     text-align: left;
+  }
+}
+
+.popup-block .btn {
+  max-width: none;
+}
+
+.popup-block {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.popup-block > .popup-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.popup-block > .popup-content {
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  position: absolute;
+  width: 100%;
+  max-width: 42rem;
+  padding: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.popup-block .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.popup-block .close-button:before {
+  content: "\D7";
+  cursor: pointer;
+  line-height: 0.5;
+  font-size: 2.25rem;
+}
+.popup-block.hide-popup,
+.popup-block.show-popup {
+  -webkit-animation: fade-out 0.3s ease-in-out both;
+  animation: fade-out 0.3s ease-in-out both;
+}
+.popup-block.show-popup {
+  -webkit-animation: fade-in 0.3s ease-in-out both;
+  animation: fade-in 0.3s ease-in-out both;
+}
+
+@media (max-width: 376px) {
+  .banners__inner {
+    justify-content: space-between;
+  }
+
+  .banners__item {
+    max-width: 33%;
+    margin: 0;
   }
 }
