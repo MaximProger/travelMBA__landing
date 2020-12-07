@@ -255,6 +255,7 @@ section {
   line-height: 20px;
   color: #333333;
   margin-bottom: 24px;
+  font-weight: 500;
 }
 
 .intro__btn {
@@ -272,9 +273,18 @@ section {
   justify-content: space-between;
 }
 
+.banners__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .banners__item {
   mix-blend-mode: luminosity;
   filter: grayscale(100%);
+
+  &--special {
+    max-width: 110px;
+  }
 }
 
 // What
@@ -826,6 +836,7 @@ section {
 
   .banners__title {
     font-size: 18px;
+    font-weight: bold;
     margin-bottom: 16px;
   }
 
