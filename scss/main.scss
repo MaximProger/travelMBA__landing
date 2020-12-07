@@ -29,7 +29,7 @@ section {
   font-size: 1rem;
   line-height: 24px;
   color: #333333;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .text__medium {
@@ -283,7 +283,7 @@ section {
 
 .what__wrapper {
   .text {
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 
     &:last-child {
       margin-bottom: 0;
@@ -293,9 +293,6 @@ section {
 
 // Whom
 .whom {
-  .text {
-    margin-bottom: 16px;
-  }
 }
 
 .list__title {
@@ -351,7 +348,7 @@ section {
   padding-bottom: 56px;
 
   .text {
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 
     &:last-child {
       margin-bottom: 0;
@@ -361,15 +358,6 @@ section {
 
 // Works
 .works {
-  .text {
-    &:first-child {
-      margin-bottom: 20px;
-    }
-  }
-}
-
-.works__list {
-  margin-top: 1rem;
 }
 
 .works__item {
@@ -522,7 +510,6 @@ section {
 
   .text {
     color: #fff;
-    margin-bottom: 24px;
   }
 }
 
@@ -801,9 +788,9 @@ section {
     // padding: 12px 20px;
   }
 
-  .text {
-    line-height: 1.5;
-  }
+  // .text {
+  //   line-height: 1.5;
+  // }
 
   .title {
     font-size: 1.5rem !important;
