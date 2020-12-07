@@ -992,14 +992,3 @@ section {
   -webkit-animation: fade-in 0.3s ease-in-out both;
   animation: fade-in 0.3s ease-in-out both;
 }
-
-@media (max-width: 376px) {
-  .banners__inner {
-    justify-content: space-between;
-  }
-
-  .banners__item {
-    max-width: 33%;
-    margin: 0;
-  }
-}
