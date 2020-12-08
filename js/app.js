@@ -2,9 +2,7 @@ $(document).ready(function () {
   // Questions
   $(".question__item").click(function () {
     $(this).toggleClass("question__item--active");
-    // $(".question__body").slideUp();
     $(this).find(".question__body").slideToggle();
-    // $(".question__item").not($(this)).removeClass("question__item--active");
   });
 
   $(".question__item--active").click(function () {
